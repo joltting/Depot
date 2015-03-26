@@ -13,15 +13,16 @@
 </div>
 <div id="columns">
   <div id="side">
+    <div id="cart">
+      <%= render(@cart) %>
+    </div>
+
     <ul>
       <li><a href="http://www....">Home</a></li>
       <li><a href="http://www..../faq">Questions</a></li>
       <li><a href="http://www..../news">News</a></li>
       <li><a href="http://www..../contact">Contact</a></li>
     </ul>
-    <div id="bottomBar">
-      <p>Time of day during render is:<%= Date.today %> </p>
-    </div>
   </div>
   <div id="main">
     <%= yield %>
