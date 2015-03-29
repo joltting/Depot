@@ -8,6 +8,10 @@
 #---
 # encoding: utf-8
 Product.delete_all
+Order.delete_all
+LineItem.delete_all
+Cart.delete_all
+
 Product.create!(title: 'CoffeeScript',
                 description:
                     %{<p>
